@@ -25,6 +25,17 @@
                <LogWavelengthDistribution minWavelength="0.0001 micron" maxWavelength="1e6 micron"/>
              </wavelengthBiasDistribution>
            </ParticleSource> 
+           <ParticleSource filename="../../tmp/stars_sb.txt" importVelocity="true" importVelocityDispersion="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
+              <smoothingKernel type="SmoothingKernel">
+                  <CubicSplineSmoothingKernel/>
+              </smoothingKernel>
+              <sedFamily type="SEDFamily">
+                  <MappingsSEDFamily/>
+              </sedFamily>
+              <wavelengthBiasDistribution type="WavelengthDistribution">
+                  <LogWavelengthDistribution minWavelength="0.0001 micron" maxWavelength="1e6 micron"/>
+              </wavelengthBiasDistribution>
+           </ParticleSource>
         </sources>
       </SourceSystem>
     </sourceSystem>
