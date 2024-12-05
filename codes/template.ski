@@ -14,7 +14,7 @@
     <sourceSystem type="SourceSystem">
       <SourceSystem minWavelength="0.09 micron" maxWavelength="100 micron" wavelengths="0.55 micron" sourceBias="0.5">
         <sources type="Source">
-            <ParticleSource filename="../../tmp/stars_old.txt" importVelocity="true" importVelocityDispersion="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
+            <ParticleSource filename="stars_old.txt" importVelocity="true" importVelocityDispersion="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
              <smoothingKernel type="SmoothingKernel">
                <CubicSplineSmoothingKernel/>
              </smoothingKernel>
@@ -25,7 +25,7 @@
                <LogWavelengthDistribution minWavelength="0.0001 micron" maxWavelength="1e6 micron"/>
              </wavelengthBiasDistribution>
            </ParticleSource> 
-           <ParticleSource filename="../../tmp/stars_sb.txt" importVelocity="true" importVelocityDispersion="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
+           <ParticleSource filename="stars_sb.txt" importVelocity="true" importVelocityDispersion="false" useColumns="" sourceWeight="1" wavelengthBias="0.5">
               <smoothingKernel type="SmoothingKernel">
                   <CubicSplineSmoothingKernel/>
               </smoothingKernel>
@@ -65,7 +65,7 @@
               </DustEmissionOptions>
           </dustEmissionOptions>
           <media type="Medium">
-              <VoronoiMeshMedium filename="../../tmp/gas.txt" minX="-5e9 pc" maxX="5e9 pc" minY="-5e9 pc" maxY="5e9 pc" minZ="-5e9 pc" maxZ="5e9 pc" massType="MassDensity" massFraction="0.3" importMetallicity="true" importTemperature="false" maxTemperature="0 K" importVelocity="true" importMagneticField="false" importVariableMixParams="false" useColumns="">
+              <VoronoiMeshMedium filename="gas.txt" minX="-5e9 pc" maxX="5e9 pc" minY="-5e9 pc" maxY="5e9 pc" minZ="-5e9 pc" maxZ="5e9 pc" massType="MassDensity" massFraction="0.3" importMetallicity="true" importTemperature="false" maxTemperature="0 K" importVelocity="true" importMagneticField="false" importVariableMixParams="false" useColumns="">
                   <materialMix type="MaterialMix">
                       <ThemisDustMix numSilicateSizes="5" numHydrocarbonSizes="5"/>
                   </materialMix>
