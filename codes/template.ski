@@ -89,11 +89,11 @@
             <LogWavelengthGrid minWavelength="0.35 micron" maxWavelength="3.7 micron" numWavelengths="1000"/>
         </defaultWavelengthGrid>
         <instruments type="Instrument">
-            <SEDInstrument instrumentName="sed" distance="10 Mpc" inclination="0 deg" azimuth="0 deg" roll="0 deg" recordComponents="false" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
+		<!-- <SEDInstrument instrumentName="sed" distance="10 Mpc" inclination="0 deg" azimuth="0 deg" roll="0 deg" recordComponents="false" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                 <wavelengthGrid type="WavelengthGrid">
                     <LogWavelengthGrid minWavelength="0.35 micron" maxWavelength="3.7 micron" numWavelengths="100"/>
                 </wavelengthGrid>
-            </SEDInstrument>
+	    </SEDInstrument> -->
             <FrameInstrument instrumentName="cube" distance="10 Mpc" inclination="0 deg" azimuth="0 deg" roll="0 deg" fieldOfViewX="1e5 pc" numPixelsX="128" centerX="0 pc" fieldOfViewY="1e5 pc" numPixelsY="128" centerY="0 pc" recordComponents="true" numScatteringLevels="0" recordPolarization="false" recordStatistics="false">
                 <wavelengthGrid type="WavelengthGrid">
                     <LogWavelengthGrid minWavelength="0.35 micron" maxWavelength="3.7 micron" numWavelengths="1000"/>
